@@ -3,9 +3,12 @@ namespace Snake
 {
     public class Program
     {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome To Snake And Ladder Problem");
-        }
+        
+            static void Main(string[] args)
+            {
+                Snake snake = new Snake();
+                Console.WriteLine("Initial Position is {0}", snake.initialPosition);
+            }
+        
     }
 }
