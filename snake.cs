@@ -21,10 +21,11 @@ namespace Snake
         }
         public void Start()
         {
-            while (PlayerPosition <= 100)
-
+            
+            while (PlayerPosition <100)
                
             {
+               
                 int choice = random.Next(0, 3);
                 switch (choice)
                 {
@@ -47,6 +48,14 @@ namespace Snake
                 }
                 Console.WriteLine(PlayerPosition);
 
+
+                if (PlayerPosition > 100)
+
+                {
+                    int previous;
+                    previous = PlayerPosition;
+                    PlayerPosition -= previous;
+                }
             }
 
 
