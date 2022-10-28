@@ -15,7 +15,7 @@ namespace Snake
         public int DiceRoll()
         {
             Random random = new Random();
-            int Dicecount = random.Next(0, 7);
+            int Dicecount = random.Next(1, 7);
             return Dicecount;
 
         }
